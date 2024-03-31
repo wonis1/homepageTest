@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>보성그룹</title>
+    <link rel="icon" href="https://bosung21.com/kr/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/bosung.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header">
+        <div class="header_inner">
+          <h1>
+            <a href="#"><span class="hide_txt">보성그룹</span></a>
+          </h1>
+          <nav>
+            <ul class="gnb">
+              <li class="dep1">
+                <a href="#">보성그룹소개</a>
+                <ul class="dep2">
+                  <li><a href="#">회사소개</a></li>
+                  <li><a href="#">비전</a></li>
+                  <li><a href="#">기업연혁</a></li>
+                </ul>
+              </li>
+              <li class="dep1">
+                <a href="#">주요계열사</a>
+                <ul class="dep2">
+                  <li><a href="#">주식회사 한양</a></li>
+                  <li><a href="#">BS산업</a></li>
+                  <li><a href="#">서남해안기업도시개발</a></li>
+                  <li><a href="#">파인힐스</a></li>
+                  <li><a href="#">파인비치</a></li>
+                  <li><a href="#">솔라시도</a></li>
+                </ul>
+              </li>
+              <li class="dep1">
+                <a href="#">지속가능경영</a>
+                <ul class="dep2">
+                  <li><a href="#">사회공헌</a></li>
+                  <li><a href="#">윤리경영</a></li>
+                </ul>
+              </li>
+              <li class="dep1">
+                <a href="#">홍보센터</a>
+                <ul class="dep2">
+                  <li><a href="#">신사옥홍보관</a></li>
+                  <li><a href="#">CI/BI소개</a></li>
+                  <li><a href="#">홍보자료실</a></li>
+                  <li><a href="#">보도자료</a></li>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">오시는길</a></li>
+                </ul>
+              </li>
+              <li class="dep1">
+                <a href="#">채용</a>
+                <ul class="dep2">
+                  <li><a href="#">인사/복리후생</a></li>
+                  <li><a href="#">채용공고/절차</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="pan"></div>
+          </nav>
+          <div class="util">
+            <div class="search_wrap">
+              <button type="button" class="search">
+                <img
+                  src="./img/icon_hd_search_wh.svg"
+                  alt="검색열기"
+                  class="sh_btn"
+                />
+                <img
+                  src="./img/ico_search_close.svg"
+                  alt="검색닫기"
+                  class="clo_btn"
+                />
+              </button>
+            </div>
+            <div class="lan_wrap select_wrap">
+              <div class="select_lang drop">KOR</div>
+              <ul style="display: none">
+                <li class="dis_no">
+                  <a href="#">KOR</a>
+                </li>
+                <li>
+                  <a href="#">ENG</a>
+                </li>
+              </ul>
+            </div>
+            <button class="total_menu">
+              <span class="hide_txt"></span>
+              <span class="hamberger"></span>
+            </button>
+          </div>
+        </div>
+        <div class="shbar">
+          <div class="sh_wrap">
+            <input type="text" placeholder="검색어를 입력하세요" />
+            <button type="button" onclick="" class="search_btn">
+              <img src="/img/search_pan.png" alt="검색하기" />
+            </button>
+          </div>
+        </div>
+        <div class="side_nav">
+          <ul class="side_gnb">
+            <li class="side_dep">
+              <a href="#">보성그룹소개</a>
+              <ul class="side_dep2">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">비전</a></li>
+                <li><a href="#">기업연혁</a></li>
+              </ul>
+            </li>
+            <li class="side_dep">
+              <a href="#">주요계열사</a>
+              <ul class="side_dep2">
+                <li><a href="#">주식회사 한양</a></li>
+                <li><a href="#">BS산업</a></li>
+                <li><a href="#">서남해안기업도시개발</a></li>
+                <li><a href="#">파인힐스</a></li>
+                <li><a href="#">파인비치</a></li>
+                <li><a href="#">솔라시도</a></li>
+              </ul>
+            </li>
+            <li class="side_dep">
+              <a href="#">지속가능경영</a>
+              <ul class="side_dep2">
+                <li><a href="#">사회공헌</a></li>
+                <li><a href="#">윤리경영</a></li>
+              </ul>
+            </li>
+            <li class="side_dep">
+              <a href="#">홍보센터</a>
+              <ul class="side_dep2">
+                <li><a href="#">신사옥홍보관</a></li>
+                <li><a href="#">CI/BI소개</a></li>
+                <li><a href="#">홍보자료실</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li class="side_dep">
+              <a href="#">채용</a>
+              <ul class="side_dep2">
+                <li><a href="#">인사/복리후생</a></li>
+                <li><a href="#">채용공고/절차</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="m_side_nav">
+          <ul class="side_gnb">
+            <li class="side_dep">
+              <div class="side_dep_wrap">
+                <a href="#">
+                  <span>보성그룹소개</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </div>
+              <ul class="side_dep2">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">비전</a></li>
+                <li><a href="#">기업연혁</a></li>
+              </ul>
+            </li>
+            <li class="side_dep">
+              <div class="side_dep_wrap">
+                <a href="#">
+                  <span>주요계열사</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </div>
+              <ul class="side_dep2">
+                <li><a href="#">주식회사 한양</a></li>
+                <li><a href="#">BS산업</a></li>
+                <li><a href="#">서남해안기업도시개발</a></li>
+                <li><a href="#">파인힐스</a></li>
+                <li><a href="#">파인비치</a></li>
+                <li><a href="#">솔라시도</a></li>
+              </ul>
+            </li>
+            <li class="side_dep">
+              <div class="side_dep_wrap">
+                <a href="#">
+                  <span>지속가능경영</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </div>
+              <ul class="side_dep2">
+                <li><a href="#">사회공헌</a></li>
+                <li><a href="#">윤리경영</a></li>
+              </ul>
+            </li>
+            <li class="side_dep">
+              <div class="side_dep_wrap">
+                <a href="#">
+                  <span>홍보센터</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </div>
+              <ul class="side_dep2">
+                <li><a href="#">신사옥홍보관</a></li>
+                <li><a href="#">CI/BI소개</a></li>
+                <li><a href="#">홍보자료실</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li class="side_dep">
+              <div class="side_dep_wrap">
+                <a href="#">
+                  <span>채용</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </div>
+              <ul class="side_dep2">
+                <li><a href="#">인사/복리후생</a></li>
+                <li><a href="#">채용공고/절차</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main id="main">
+        <section class="sec1">
+          <div class="swiper main">
+            <ul class="swiper-wrapper main">
+              <li class="swiper-slide slide1">
+                <img src="./img/main1.jpg" alt="메인페이지이미지1" class="main1" />
+                <div class="visual_txt">
+                  <h2>Challenge The Future</h2>
+                  <p class="first">
+                    지속가능한 친환경에너지와 LNG사업을 통해 <br>
+                    청정 미래를 이끌어 갈 것입니다.
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide slide2">
+                <img src="./img/main2.jpg" alt="메인페이지이미지2" class="main2">
+                <div class="visual_txt">
+                  <h2>Value Innovation</h2>
+                  <p>
+                    주거문화의 혁신을 통해 건설 그 이상의 가치를 실현하겠습니다.
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide slide3">
+                <img src="./img/main3.jpg" alt="메인페이지이미지3" class="main3">
+                <div class="visual_txt">
+                  <h2>No.1 Developer</h2>
+                  <p>
+                    다양한 분야의 개발사업에 도전하며 부동산 시장을 선도합니다.
+                  </p>
+                </div>
+              </li>
+              <li class="swiper-slide slide4">
+                <img src="./img/main4.jpg" alt="메인페이지이미지4" class="main4">
+                <div class="visual_txt">
+                  <h2>Harmony With Nature</h2>
+                  <p>
+                    천혜의 자연 환경을 살린 최고급 골프 리조트와 숙박시설을
+                    만들어온 <br>
+                    역량으로 레저·관광 산업의 미래를 그립니다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <!-- <div class="slider_btn">
+            <a href="#" class="prev"></a>
+            <a href="#" class="next"></a>
+          </div> -->
+          </div>
+
+          <div class="swiper-btns main">
+            <div class="swiper-pagination main"></div>
+
+            <div class="swiper-button-prev main"></div>
+            <div class="swiper-button-next main"></div>
+          </div>
+        </section>
+        <section class="sec2">
+          <div class="sec2_inner">
+            <p>
+              보성그룹은 ‘에너지 사업’을 그룹의 신성장 동력 산업으로 정하고,
+              <br>
+              에너지 분야의 사업 영역을 확장해 가고 있습니다.
+            </p>
+            <div class="cover left"></div>
+            <div class="cover right"></div>
+            <video src="./img/future.mp4" autoplay muted loop></video>
+          </div>
+        </section>
+        <section class="sec3">
+          <div class="inner">
+            <h2>Business</h2>
+            <div class="content-wrap">
+              <div class="business_left">
+                <ul>
+                  <li class="content_list active">
+                    <div class="list_txt">
+                      <em>01</em>
+                      <span>건설/에너지</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                  </li>
+                  <li class="content_list b">
+                    <div class="list_txt">
+                      <em>02</em>
+                      <span>부동산 개발</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                  </li>
+                  <li class="content_list c">
+                    <div class="list_txt">
+                      <em>03</em>
+                      <span>미래도시</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                  </li>
+                  <li class="content_list d">
+                    <div class="list_txt">
+                      <em>04</em>
+                      <span>레저/스포츠산업</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="business_right">
+                <ul>
+                  <li class="list active">
+                    <div class="busi_txt_box">
+                      <i class="busi-logo"></i>
+                      <strong>주식회사 한양</strong>
+                      <p>
+                        건설의 역사를 그려온 한양은 사람을 위한<br>
+                        에너지와 도시개발로 더 나은 내일을 열겠습니다.
+                      </p>
+                      <div class="more_btn">
+                        <a href="#">View More</a>
+                      </div>
+                    </div>
+                    <img src="img/sec3_01.jpg" alt="주식회사 한양">
+                    <div class="dark-img"></div>
+                  </li>
+                  <li class="list">
+                    <div class="busi_txt_box">
+                      <i class="busi-logo"></i>
+                      <strong>BS 산업</strong>
+                      <p>
+                        BS산업은 부동산 시장의 트렌드를 선도하며, 차별화된 전략과
+                        <br>
+                        강한 실행력으로 부동산 산업의 새로운 방향을 제시합니다.
+                      </p>
+                      <div class="more_btn">
+                        <a href="#">View More</a>
+                      </div>
+                    </div>
+                    <img src="img/sec3_02.jpg" alt="BS 산업">
+                    <div class="dark-img"></div>
+                  </li>
+                  <li class="list">
+                    <div class="busi_txt_box">
+                      <i class="busi-logo"></i>
+                      <strong>서남해안기업도시개발</strong>
+                      <p>
+                        도시와 산업이 함께 성장하는 은퇴 없는 도시, <br>
+                        앞선 미래를 모두 공유하고 누리는 미래도시 솔라시도.
+                      </p>
+                      <div class="more_btn">
+                        <a href="#">View More</a>
+                      </div>
+                    </div>
+                    <img src="img/sec3_03.jpg" alt="서남해안기업도시개발">
+                    <div class="dark-img"></div>
+                  </li>
+                  <li class="list">
+                    <div class="busi_txt_box">
+                      <div class="busi-logo-wrap">
+                        <i class="busi-logo"></i>
+                        <i class="busi-logo"></i>
+                        <i class="busi-logo"></i>
+                      </div>
+                      <strong>파인비치·파인힐스·솔라시도</strong>
+                      <p>
+                        독자적인 레저스포츠산업의 무한한 가치를 실현하여 <br>
+                        세계 레저스포츠산업의 메카로 성장합니다.
+                      </p>
+                      <div class="more_btn">
+                        <a href="#">View More</a>
+                      </div>
+                    </div>
+                    <img src="img/sec3_04.jpg" alt="파인비치·파인힐스·솔라시도">
+                    <div class="dark-img"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sec4 eq">
+          <div class="inner">
+            <h2>News</h2>
+            <p>보성그룹의 최신 소식을 확인해보세요.</p>
+            <div class="swiper newsSwiper">
+              <ul class="swiper-wrapper news">
+                <li class="swiper-slide news">
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/news_01.png" alt="뉴스1 이미지" >
+                    </div>
+                    <p>[보도기사] 한양, 여수서 청정 에너지 밸류체인 드라이브</p>
+                    <span>2023-11-29</span>
+                  </a>
+                </li>
+                <li class="swiper-slide news">
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/news_02.png" alt="뉴스2 이미지" >
+                    </div>
+                    <p>
+                      [보도기사] 3200가구 대단지 ‘천안 한양수자인 에코시티’
+                      오늘부터 입주
+                    </p>
+                    <span>2024-01-22</span>
+                  </a>
+                </li>
+                <li class="swiper-slide news">
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/news_03.png" alt="뉴스3 이미지" >
+                    </div>
+                    <p>
+                      [보도기사] 동북아 LNG 허브 터미널 사업 추진… 2027년 준공
+                      목표
+                    </p>
+                    <span>2024-01-08</span>
+                  </a>
+                </li>
+                <li class="swiper-slide news">
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/news_04.png" alt="뉴스4 이미지" >
+                    </div>
+                    <p>
+                      [보도기사] 미래세대 위한 친환경 정원…16만평 간척지의 기적
+                    </p>
+                    <span>2023-12-29</span>
+                  </a>
+                </li>
+                <li class="swiper-slide news">
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/news_05.png" alt="뉴스5 이미지" >
+                    </div>
+                    <p>[보도기사] 아름다운 연못과 정원 품은 골프장</p>
+                    <span>2023-11-10</span>
+                  </a>
+                </li>
+                <li class="swiper-slide news">
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/news_06.png" alt="뉴스6 이미지" >
+                    </div>
+                    <p>[보도기사] 인천로봇랜드 정상화 논의 '스타트'</p>
+                    <span>2023-11-02</span>
+                  </a>
+                </li>
+                <li class="swiper-slide news">
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/news_07.png" alt="뉴스7 이미지" >
+                    </div>
+                    <p>[보도기사] "솔라시도, 글로벌 데이터센터로 최적"</p>
+                    <span>2023-10-15</span>
+                  </a>
+                </li>
+                <li class="swiper-slide news">
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/news_08.png" alt="뉴스8 이미지" >
+                    </div>
+                    <p>
+                      [보도기사] 날개 단 솔라시도 조성사업, 사업 추진 속도
+                      붙는다
+                    </p>
+                    <span>2023-10-07</span>
+                  </a>
+                </li>
+                <li class="swiper-slide news">
+                  <a href="#">
+                    <div class="img_box">
+                      <img src="img/news_09.png" alt="뉴스9 이미지" >
+                    </div>
+                    <p>
+                      [보도기사] 한양, 세계 최대 그린에너지 투자운용사와
+                      재생에너지 협약
+                    </p>
+                    <span>2023-09-29</span>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="swiper-scrollbar news"></div>
+            </div>
+
+            <div class="sec4_btns">
+              <div class="swiper-btns sec4">
+                <!-- <div class="swiper-pagination sec4"></div> -->
+                <button class="swiper-button-prev news"></button>
+                <button class="swiper-button-next news"></button>
+              </div>
+              <div class="view_more">
+                <a href="#">View More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sec5 eq">
+          <div class="inner">
+            <div class="sec5_txt">
+              <div class="txt_wrap">
+                <h2>Media</h2>
+                <p>보성그룹의 다양한 이야기를 만나보세요.</p>
+                <div class="view_more">
+                  <a href="#">View More</a>
+                  <div class="sec5_btns">
+                    <div class="swiper-btns sec5">
+                      <!-- <div class="swiper-pagination sec4"></div> -->
+                      <button class="swiper-button-prev media"></button>
+                      <button class="swiper-button-next media"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper mediaSwiper">
+              <ul class="swiper-wrapper media">
+                <li class="swiper-slide media">
+                  <a href="#">
+                    <div class="sec5_img">
+                      <img src="./img/media1.png" alt="미디어1 이미지" />
+                    </div>
+                    <div class="slide_txt">
+                      <p>
+                        부동산 트렌드 대세는?! 올해도 출석 완🏠! 2023 부동산
+                        트렌드쇼
+                      </p>
+                      <span>2024-01-09</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide media">
+                  <a href="#">
+                    <div class="sec5_img">
+                      <img src="./img/media2.png" alt="미디어2 이미지" />
+                    </div>
+                    <div class="slide_txt">
+                      <p>
+                        햇빛정원도시 솔라시도의 NEW 비전 "재생에너지
+                        허브터미널"...! 전라남도 투자유치설명회 현장🙌
+                      </p>
+                      <span>2023-01-02</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide media">
+                  <a href="#">
+                    <div class="sec5_img">
+                      <img src="./img/media4.png" alt="미디어3 이미지" />
+                    </div>
+                    <div class="slide_txt">
+                      <p>
+                        2023 한 해 동안 보성그룹에는 어떤 일이 있었을까요?
+                        보성뉴스룸에서 알려드립니다!
+                      </p>
+                      <span>2024-01-03</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide media">
+                  <a href="#">
+                    <div class="sec5_img">
+                      <img src="./img/media5.png" alt="미디어4 이미지" />
+                    </div>
+                    <div class="slide_txt">
+                      <p>
+                        우리 동네 에너지를 직접 만든다고? 분산에너지 활성화
+                        특별법 3분 마스터!
+                      </p>
+                      <span>2023-09-06</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide media">
+                  <a href="#">
+                    <div class="sec5_img">
+                      <img src="./img/media03.png" alt="미디어5 이미지" />
+                    </div>
+                    <div class="slide_txt">
+                      <p>
+                        건설사 조경 담당자는 무슨 일을 할까? 한양 조경 담당자가
+                        소개하는 조경 이야기! (1부)
+                      </p>
+                      <span>2023-02-28</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide media">
+                  <a href="#">
+                    <div class="sec5_img">
+                      <img src="./img/media6.png" alt="미디어6 이미지" />
+                    </div>
+                    <div class="slide_txt">
+                      <p>
+                        2050 탄소중립을 향한 보성그룹의 첫 번째 약속, 4월 8일
+                        식목행사 프리뷰 인터뷰🌳
+                      </p>
+                      <span>2022-04-06</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="swiper-scrollbar media"></div>
+            </div>
+          </div>
+        </section>
+        <section class="sec6">
+          <div class="content left">
+            <div class="sec6_txt">
+              <a href="#">
+                <h2>CAREER</h2>
+                <p>
+                  넘치는 열정과 독창적인 사고로 새로운 가치를 <br>
+                  만드는 인재를 기다립니다.
+                </p>
+              </a>
+            </div>
+            <!-- <div class="dark-img"></div> -->
+            <img src="./img/career.png" alt="career 이미지">
+          </div>
+          <div class="content right">
+            <div class="sec6_txt">
+              <a href="#">
+                <h2>ESG</h2>
+                <p>
+                  기업과 사회, 환경이 공존하는 지속가능한 <br>
+                  내일을 만들어 갑니다.
+                </p>
+              </a>
+            </div>
+            <!-- <div class="dark-img"></div> -->
+            <img src="./img/esg.png" alt="esg 이미지" />
+          </div>
+        </section>
+      </main>
+      <footer id="footer">
+        <div class="inner">
+          <div class="logo">
+            <img src="./img/logo-bosung-en.png" alt="보성그룹 로고" />
+          </div>
+          <div class="content_left">
+            <p class="address">
+              서울시 송파구 법원로11길 12 (문정동) 한양타워
+              <span class="spacer"></span>
+              광주광역시 동구 서석소85번길(대의동) 8-12
+            </p>
+            <p class="tel_num">
+              Tel 02.721.8337
+              <span class="spacer"></span>
+              Fax 02.721.8887
+            </p>
+            <div class="customer">
+              <a href="#">
+                <strong>개인정보처리방침 <span class="spacer"></span></strong>
+              </a>
+              <a href="#">
+                <strong>고객문의</strong>
+              </a>
+            </div>
+            <div class="copyright">
+              <p>Copyright © 2021 Bosung. All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="content_right">
+            <div class="family">
+              <button>FAMILY SITE</button>
+              <div class="family_wrap">
+                <ul class="family_list">
+                  <li><a href="#">보성그룹</a></li>
+                  <li><a href="#">한양</a></li>
+                  <li><a href="#">BS산업</a></li>
+                  <li><a href="#">한양수자인</a></li>
+                  <li><a href="#">서남해안기업도시개발</a></li>
+                  <li><a href="#">파일비치GL</a></li>
+                  <li><a href="#">파인힐스CC</a></li>
+                  <li><a href="#">솔라시도CC</a></li>
+                  <li><a href="#">코리아에셋매니지먼트</a></li>
+                  <li><a href="#">해원에스티</a></li>
+                  <li><a href="#">해원엠에스씨</a></li>
+                  <li><a href="#">여수국제항만</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="sns_icon">
+              <li class="youtube">
+                <a href="#" class="icon_wrap y">
+                  <img src="./img/icon_footer01.png" alt="youtube 바로가기" />
+                  <img src="./img/icon_footer01_01.png" alt="youtube 바로가기" />
+                </a>
+              </li>
+              <li class="insta">
+                <a href="#" class="icon_wrap i">
+                  <img src="./img/icon_footer02.png" alt="instagram 바로가기" />
+                  <img src="./img/icon_footer02_01.png" alt="instagram 바로가기" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
